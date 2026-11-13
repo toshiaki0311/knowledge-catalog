@@ -46,7 +46,7 @@ Google Cloud の Knowledge Catalog の知識を、全体像から個別トピッ
 | [Change request](docs/glossary/Change-request.md) | エンリッチメントエージェントが提案した変更を、承認されるまで保留しておく単位 |
 | [Overlay の Entry](docs/glossary/Overlay-entry.md) | エンリッチメントで生成された説明、概念、列と用語集の対応を、Context Set の中に保存する Entry |
 | [クエリテンプレート](docs/glossary/クエリテンプレート.md) | 検証済みでパラメータ化された SQL を、自然言語の質問に結びつけて保存するもの |
-| [MCP](docs/glossary/MCP.md) | LLM や AI アプリ、エージェントが外部のデータソースに接続する方法を標準化するプロトコル |
+| [MCP](docs/glossary/MCP.md) | Knowledge Catalog が提供する MCP サーバーの種類、ツール、認証 |
 | [LookupContext API](docs/glossary/LookupContext-API.md) | 1 回のリクエストで、LLM 向けに整形済みのメタデータのまとまりを取得する API |
 | [Iceberg REST Catalog](docs/glossary/Iceberg-REST-Catalog.md) | Apache Iceberg のテーブルと名前空間のメタデータを、REST のエンドポイントで公開するカタログ |
 | [Lakehouse runtime catalog](docs/glossary/Lakehouse-runtime-catalog.md) | リモートの Iceberg REST Catalog のエンドポイントに接続し、テーブルのメタデータを同期する Google Cloud Lakehouse のカタログ |
