@@ -5,6 +5,8 @@
 データソースが、別クラウド、Salesforce や SAP などの SaaS、顧客オンプレミスのストレージにあるとします。
 AI エージェントからは直接アクセスできますが、Knowledge Catalog とはネットワークやセキュリティ上で分離されています。
 
+![前提となる状況](../images/isolated-external-sources-situation.png)
+
 ## 問い 1
 
 こうした状況は、実際に発生しうるか。
