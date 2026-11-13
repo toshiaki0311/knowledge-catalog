@@ -22,16 +22,16 @@ Context Set は `type="context-set"` の特殊な [Entry Group](メタデータ�
 | 業務概念 | 用語の定義、KPI の計算式 | `documents/concepts/*` |
 | ナレッジベース | ガイドラインなどの文書 | `documents/*` |
 | ラーニング | 学習内容の文書 | `documents/learnings/*` |
-| クエリテンプレート | パラメータ付きの SQL。意図、自然言語の質問、クエリ、パラメータを持つ | |
+| [クエリテンプレート](../glossary/クエリテンプレート.md) | パラメータ付きの SQL。意図、自然言語の質問、クエリ、パラメータを持つ | |
 
 ## 他の要素との関係
 
 | 相手 | 関係 |
 |---|---|
 | [Context Graph](Context-Graph.md) | Context Set は Context Graph の中の、まとまった部分グラフ |
-| 実テーブルの Entry | データ資産の Entry が `reference` の Entry Link で `@bigquery` などの Entry を参照する |
+| 実テーブルの Entry | データ資産の Entry が [`reference`](../glossary/Reference.md) の Entry Link で `@bigquery` などの Entry を参照する |
 | データへのアクセス権 | Context Set は付与しない |
-| データプロダクト | データプロダクトはデータそのものを共有・統治し、Context Set は会話用の意味をまとめる。データプロダクトから参照できる |
+| [データプロダクト](../glossary/データプロダクト.md) | データプロダクトはデータそのものを共有・統治し、Context Set は会話用の意味をまとめる。データプロダクトから参照できる |
 
 ## 関連
 

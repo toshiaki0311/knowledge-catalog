@@ -1,0 +1,19 @@
+# Definition
+
+[全体像](../全体像.md) › 用語集
+
+技術的なデータ資産や列を、対応するビジネス用語集の定義に結ぶ Context Graph のエッジ。
+
+## 例
+
+`email_address` 列と、用語「顧客メールアドレス」の定義を結ぶ。説明用の例。
+
+## Entry Link Type との対応
+
+[メタデータモデル](../architecture/メタデータモデル.md) の Entry Link Type に同名の `definition` がある。\
+エッジとの対応は公式ドキュメントに明記されていない。
+
+## 関連
+
+- 使われている資料: [Context Graph](../architecture/Context-Graph.md)
+- 公式ドキュメント（2026-11-13 確認）: [Knowledge Studio](https://docs.cloud.google.com/knowledge-catalog/docs/knowledge-studio)、[データ資産の探索](https://docs.cloud.google.com/knowledge-catalog/docs/explore-data-assets)
