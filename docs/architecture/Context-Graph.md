@@ -1,9 +1,9 @@
 # Context Graph
 
-[全体像](../overview.md) › ② Knowledge Catalog 層
+[全体像](../全体像.md) › ② Knowledge Catalog 層
 
 技術スキーマ、業務上の意味、データ間の関係、運用上の挙動、信頼シグナルを組み合わせたナレッジグラフです。\
-[メタデータモデル](metadata-model.md) の Entry がノード、Entry Link がエッジになり、[Knowledge Studio](knowledge-studio.md) では対話的に操作できる図として表示されます。
+[メタデータモデル](メタデータモデル.md) の Entry がノード、Entry Link がエッジになり、[Knowledge Studio](Knowledge-Studio.md) では対話的に操作できる図として表示されます。
 
 たとえば `customer_orders` テーブルのノードから、結合できる `customers` テーブルと、`email_address` 列の意味を定義する用語をたどれます。
 
@@ -14,7 +14,7 @@
 - Looker、dbt、Databricks Unity Catalog などサードパーティの資産
 - ビジネス用語集の用語
 - データプロダクト
-- [Context Sets](context-sets.md)、ナレッジベースの文書
+- [Context Sets](Context-Sets.md)、ナレッジベースの文書
 - カスタム資産
 
 ## エッジ

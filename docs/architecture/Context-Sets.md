@@ -1,6 +1,6 @@
 # Context Sets
 
-[全体像](../overview.md) › ③ コンテキスト整備・提供層
+[全体像](../全体像.md) › ③ コンテキスト整備・提供層
 
 意味の情報とデータ資産への参照を、範囲を区切ってまとめたコンテナです。\
 AI エージェントに渡す知識をドメインごとに束ね、際限のない検索をさせないための境界になります。
@@ -9,7 +9,7 @@ AI エージェントに渡す知識をドメインごとに束ね、際限の�
 
 ## 実体
 
-Context Set は `type="context-set"` の特殊な [Entry Group](metadata-model.md) です。\
+Context Set は `type="context-set"` の特殊な [Entry Group](メタデータモデル.md) です。\
 中身はカスタムの Entry と Aspect として Knowledge Catalog に保存され、業務用語、SQL テンプレート、Markdown の文書は Aspect に入ります。
 
 ## 中身
@@ -28,7 +28,7 @@ Context Set は `type="context-set"` の特殊な [Entry Group](metadata-model.m
 
 | 相手 | 関係 |
 |---|---|
-| [Context Graph](context-graph.md) | Context Set は Context Graph の中の、まとまった部分グラフ |
+| [Context Graph](Context-Graph.md) | Context Set は Context Graph の中の、まとまった部分グラフ |
 | 実テーブルの Entry | データ資産の Entry が `reference` の Entry Link で `@bigquery` などの Entry を参照する |
 | データへのアクセス権 | Context Set は付与しない |
 | データプロダクト | データプロダクトはデータそのものを共有・統治し、Context Set は会話用の意味をまとめる。データプロダクトから参照できる |

@@ -1,6 +1,6 @@
 # Knowledge Studio
 
-[全体像](../overview.md) › ③ コンテキスト整備・提供層
+[全体像](../全体像.md) › ③ コンテキスト整備・提供層
 
 企業のメタデータをキュレーションして統合し、生成 AI アプリを業務のコンテキストにグラウンディングさせるための画面です。\
 Preview の機能です。
@@ -9,9 +9,9 @@ Preview の機能です。
 
 | 領域 | できること | 例 |
 |---|---|---|
-| New chat | 自然言語でのデータ探索と、[Context Graph](context-graph.md) の表示 | 「顧客の注文データはどこにあるか」と尋ねる |
-| Context sets | [Context Sets](context-sets.md) の作成と管理 | 販売分析用の Context Set を作る |
-| Enrichments | [エンリッチメントタスク](enrichment-tasks.md) と評価ベンチマークの設定、AI が提案した変更のレビュー | 提案された列の説明を承認する |
+| New chat | 自然言語でのデータ探索と、[Context Graph](Context-Graph.md) の表示 | 「顧客の注文データはどこにあるか」と尋ねる |
+| Context sets | [Context Sets](Context-Sets.md) の作成と管理 | 販売分析用の Context Set を作る |
+| Enrichments | [エンリッチメントタスク](エンリッチメントタスク.md) と評価ベンチマークの設定、AI が提案した変更のレビュー | 提案された列の説明を承認する |
 
 ## 入力になる情報
 
