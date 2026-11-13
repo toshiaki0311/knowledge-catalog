@@ -1,19 +1,25 @@
 # メタデータモデル
 
 Knowledge Catalog は、データ資産を Entry として表し、Aspect でメタデータを付け、Entry Link で資産どうしの関係を表します。
-要素どうしの包含と参照は [コンポーネント間の関係](component-relationships.md) にあります。
+
+![メタデータモデルの包含と参照](../images/metadata-model.png)
 
 ## 構成要素
 
-| 要素 | 定義 | 具体例 |
+例は、BigQuery のテーブル `orders_project.sales.customer_orders` が登録された場合です。
+
+| 要素 | 定義 | 例 |
 |---|---|---|
-| Entry Group | Entry と Entry Link を入れるリージョン単位のコンテナ。管理とセキュリティの境界になる | `@bigquery` |
-| Entry | 単一のデータ資産を表す | BigQuery のテーブル |
+| Entry Group | Entry と Entry Link を入れるリージョン単位のコンテナ。管理とセキュリティの境界になる | BigQuery 用に自動で作られる `@bigquery` |
+| Entry | 単一のデータ資産を表す | `customer_orders` テーブルを指す 1 件の登録 |
 | Entry Type | Entry の構造と必須の Aspect を定めるテンプレート | BigQuery テーブル用の型 |
-| Aspect Type | Aspect のフィールド、データ型、検証ルールを定める再利用可能なスキーマ | `Schema`、`DataQuality` |
-| Aspect | Aspect Type に従う、関連するメタデータフィールドの集まり | 列の定義、所有者 |
-| Entry Link | 2 つの Entry、または Entry 内の列どうしの意味的な関係 | 用語と列の対応 |
-| Entry Link Type | Entry Link の種類 | `definition` |
+| Aspect Type | Aspect のフィールド、データ型、検証ルールを定める再利用可能なスキーマ | `Schema`。列名、型、説明という項目を定める |
+| Aspect | Aspect Type に従う、関連するメタデータフィールドの集まり | `customer_orders` の列の一覧。`email_address` 列に付けた「機密情報」という分類 |
+| Entry Link | 2 つの Entry、または Entry 内の列どうしの意味的な関係 | `customer_orders` と `customers` テーブルが結合できるという関係 |
+| Entry Link Type | Entry Link の種類 | `schema-join` |
+
+Entry の識別子は、親の Entry Group の中で一意です。
+Entry を作るときは、Entry Type が必須とする Aspect が揃っているか検証されます。
 
 ## Aspect の付与先
 
@@ -23,22 +29,31 @@ Aspect は Entry、Entry の列、Entry Link の 3 か所に付きます。
 
 ## Entry Link Type
 
-| 種類 | 用途 | 方向 |
-|---|---|---|
-| `definition` | ビジネス用語集の定義を、物理的な列や Entry に結ぶ | あり |
-| `synonym` | 同等の業務概念や別名の用語を結ぶ | なし |
-| `related` | システムをまたぐ、ゆるく関連する資産を結ぶ | なし |
-| `schema-join` | 外部キーなどで結合できるテーブルを結ぶ | なし |
+| 種類 | 用途 | 方向 | 例 |
+|---|---|---|---|
+| `definition` | ビジネス用語集の定義を、物理的な列や Entry に結ぶ | あり | 用語「顧客メールアドレス」を `email_address` 列に結ぶ |
+| `synonym` | 同等の業務概念や別名の用語を結ぶ | なし | 「顧客」と「取引先」を結ぶ |
+| `related` | システムをまたぐ、ゆるく関連する資産を結ぶ | なし | 注文テーブルと、別システムの出荷データを結ぶ |
+| `schema-join` | 外部キーなどで結合できるテーブルを結ぶ | なし | `customer_orders` と `customers` を結ぶ |
 
 ## システム提供とユーザー定義
 
 | 要素 | システム提供 | ユーザー定義 |
 |---|---|---|
-| Entry Group | Google Cloud サービス用にプロジェクトごとに作られる。`@bigquery`、`@spanner`、`@pubsub` など | カスタム資産と権限管理のために作る |
-| Entry | Google Cloud のソースから自動で作られる | 独自のデータソース、ファイル、外部 DB のために作る |
+| Entry Group | `@bigquery`、`@spanner`、`@pubsub` など。プロジェクトごとに作られる | カスタム資産と権限管理のために作る |
 | Entry Type | Google Cloud のリソース種別を表す型 | カスタム資産向けに必須・任意の Aspect を定める |
 | Aspect Type | `Schema`、`Overview`、`Contacts`、`DataQuality`、`Lineage` など | PII 分類や SLA の階層など |
 | Aspect | ソースシステム、クエリログ、自動スキャンから作られる | 利用者、パイプライン、エージェントが付ける |
+
+## ロケーションとプロジェクトの制約
+
+| 関係 | 制約 |
+|---|---|
+| Entry と Entry Type | ロケーションが一致するか、Entry Type が `global`。Entry Type は `global` か同じプロジェクトのもの |
+| Aspect と Aspect Type | Aspect Type が Entry と同じロケーションか `global`。`global` か同じプロジェクトのもの |
+| Entry Link と Entry Link Type | ロケーションが一致するか、Entry Link Type が `global` |
+| Entry Link と Entry | 同じ組織内なら、別プロジェクトの Entry どうしを結べる |
+| Entry Type と Aspect Type | 同じロケーションか `global` の Aspect Type で構成する。カスタムの Aspect Type は同じプロジェクトとロケーションのもの |
 
 ## 関連
 

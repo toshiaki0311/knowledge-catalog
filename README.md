@@ -6,7 +6,7 @@ Google Cloud の Knowledge Catalog の知識を、全体像から個別トピッ
 
 | 資料 | 内容 |
 |---|---|
-| [全体像](docs/overview.md) | サービスの定義、4 つの層、全体構成図 |
+| [全体像](docs/overview.md) | サービスの定義、全体構成図、層ごとの資料 |
 | [調査予定](docs/backlog.md) | これから資料にするトピック |
 
 ### 構成（architecture）
@@ -15,8 +15,7 @@ Google Cloud の Knowledge Catalog の知識を、全体像から個別トピッ
 |---|---|
 | [メタデータのライフサイクル](docs/architecture/metadata-lifecycle.md) | 集約、拡充、検索と取得の 3 つの柱 |
 | [データソース](docs/architecture/data-sources.md) | メタデータの収集元と取り込み方法 |
-| [メタデータモデル](docs/architecture/metadata-model.md) | Entry、Aspect、Entry Link とその型 |
-| [コンポーネント間の関係](docs/architecture/component-relationships.md) | メタデータモデルの包含、参照、ロケーションの制約 |
+| [メタデータモデル](docs/architecture/metadata-model.md) | Entry、Aspect、Entry Link とその型、包含と参照の関係 |
 | [付加情報・管理機能](docs/architecture/enrichment-features.md) | 用語集、リネージ、プロファイリング、品質、インサイト |
 | [Context Graph](docs/architecture/context-graph.md) | 資産、業務上の意味、関係を統合するナレッジグラフ |
 | [Knowledge Studio](docs/architecture/knowledge-studio.md) | コンテキストを整備する画面 |

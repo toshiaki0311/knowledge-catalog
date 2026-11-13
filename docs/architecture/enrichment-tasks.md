@@ -1,7 +1,7 @@
 # エンリッチメントタスク
 
 エンリッチメントエージェントが対象のデータ資産を分析し、メタデータの追加や変更を提案する仕組みです。
-[Knowledge Studio](knowledge-studio.md) の Enrichments から使います。
+たとえば `email_address` 列に説明がなければ、説明文の追加を提案し、人が承認すると反映されます。
 
 ## 用語
 
@@ -44,5 +44,4 @@ BigQuery のリソースに付いている説明は上書きされません。
 ## 関連
 
 - [全体像](../overview.md) の層③
-- Knowledge Catalog 本体の拡充機能: [付加情報・管理機能](enrichment-features.md)
 - 公式ドキュメント（2026-11-13 確認）: [エンリッチメントタスクについて](https://docs.cloud.google.com/knowledge-catalog/docs/about-enrichment-tasks)、[エンリッチメントの実行管理](https://docs.cloud.google.com/knowledge-catalog/docs/manage-enrichment-runs)

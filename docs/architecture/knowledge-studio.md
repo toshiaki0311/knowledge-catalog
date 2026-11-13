@@ -5,11 +5,11 @@ Preview の機能です。
 
 ## 3 つの領域
 
-| 領域 | できること |
-|---|---|
-| New chat | 自然言語でのデータ探索と、[Context Graph](context-graph.md) の対話的な表示 |
-| Context sets | [Context Sets](context-sets.md) の作成と管理 |
-| Enrichments | [エンリッチメントタスク](enrichment-tasks.md) の設定、評価ベンチマークの設定、AI が提案した変更のレビュー |
+| 領域 | できること | 例 |
+|---|---|---|
+| New chat | 自然言語でのデータ探索と、[Context Graph](context-graph.md) の表示 | 「顧客の注文データはどこにあるか」と尋ねる |
+| Context sets | [Context Sets](context-sets.md) の作成と管理 | 販売分析用の Context Set を作る |
+| Enrichments | [エンリッチメントタスク](enrichment-tasks.md) と評価ベンチマークの設定、AI が提案した変更のレビュー | 提案された列の説明を承認する |
 
 ## 入力になる情報
 
@@ -27,5 +27,4 @@ Preview の機能です。
 ## 関連
 
 - [全体像](../overview.md) の層③
-- 整備した結果の取得: [コンテキストの取得手段](context-retrieval.md)
 - 公式ドキュメント（2026-11-13 確認）: [Knowledge Studio](https://docs.cloud.google.com/knowledge-catalog/docs/knowledge-studio)
