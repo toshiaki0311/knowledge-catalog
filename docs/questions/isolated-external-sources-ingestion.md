@@ -26,6 +26,8 @@ Knowledge Catalog 自身がデータソースへ取りに行くのではなく�
 
 取り込まれるのはメタデータだけで、実データは移動しません。
 
+出典: [コネクタ](https://docs.cloud.google.com/knowledge-catalog/docs/connectors)、[Managed connectivity](https://docs.cloud.google.com/knowledge-catalog/docs/managed-connectivity-overview)、[メタデータのインポート](https://docs.cloud.google.com/knowledge-catalog/docs/import-metadata)、[クロスクラウドのデータアクセス](https://docs.cloud.google.com/lakehouse/docs/about-cross-cloud-data-access)
+
 ### ① 管理型コネクタ
 
 対応するデータソースは Databricks Unity Catalog、dbt、MySQL、Oracle、PostgreSQL、Snowflake Horizon、SQL Server です。
@@ -37,6 +39,8 @@ Knowledge Catalog 自身がデータソースへ取りに行くのではなく�
 | 認証 | Oracle はユーザー名とパスワード。Snowflake Horizon はキーペア認証だけ |
 | 同期 | 実行のたびに Entry Group を全量で上書きする。増分更新はできない |
 | 料金 | コネクタでの取り込みに追加料金はない。メタデータの保存には通常の料金がかかる |
+
+出典: [コネクタ](https://docs.cloud.google.com/knowledge-catalog/docs/connectors)、[Oracle のコネクタ](https://docs.cloud.google.com/knowledge-catalog/docs/oracle-transfer)、[Snowflake Horizon のコネクタ](https://docs.cloud.google.com/knowledge-catalog/docs/snowflake-horizon-transfer)
 
 ### ② Managed connectivity パイプライン
 
@@ -54,6 +58,8 @@ Workflows が順序を制御し、Cloud Scheduler で定期実行できます。
 VPC からオンプレミスや他クラウドへの経路の作り方は、公式ドキュメントに書かれていません。\
 AWS Glue や Snowflake 向けなどのコミュニティ製コネクタが GitHub にありますが、Google の公式サポート対象外です。
 
+出典: [Managed connectivity](https://docs.cloud.google.com/knowledge-catalog/docs/managed-connectivity-overview)、[ワークフローでのインポート](https://docs.cloud.google.com/knowledge-catalog/docs/import-using-workflows-custom-source)、[カスタムコネクタの開発](https://docs.cloud.google.com/knowledge-catalog/docs/develop-custom-connector)、[Spark バッチのネットワーク](https://docs.cloud.google.com/dataproc-serverless/docs/concepts/network)
+
 ### ③ 自前の抽出とインポート
 
 Google Cloud からデータソースへ入る経路を作れないときの方法です。\
@@ -70,6 +76,8 @@ Google Cloud からデータソースへ入る経路を作れないときの方�
 
 カスタムの Entry は、オンプレミスなど Google Cloud の外にあるリソースを表すためのものと明記されています。
 
+出典: [メタデータのインポート](https://docs.cloud.google.com/knowledge-catalog/docs/import-metadata)、[カスタムソースの取り込み](https://docs.cloud.google.com/knowledge-catalog/docs/ingest-custom-sources)
+
 ### ④ 外部カタログとの連携
 
 データソースが外部のカタログで管理されている場合の方法です。
@@ -81,7 +89,11 @@ Google Cloud からデータソースへ入る経路を作れないときの方�
 | 認証 | OIDC か Secret Manager |
 | 提供段階 | Databricks Unity、AWS Glue、Snowflake Horizon の連携は Preview |
 
+出典: [クロスクラウドのデータアクセス](https://docs.cloud.google.com/lakehouse/docs/about-cross-cloud-data-access)、[メタデータモデル](https://docs.cloud.google.com/knowledge-catalog/docs/metadata-overview)
+
 ### データソースごとの対応
+
+各方法の出典をもとに整理した表です。
 
 | データソース | 使える方法 |
 |---|---|
@@ -107,7 +119,8 @@ Snowflake Horizon のコネクタは、Snowflake 側のデータ品質とプロ�
 それ以外のデータソースでは、データソース側で計算した結果を Aspect として ③ で取り込む形が考えられます。\
 この方法は公式ドキュメントには書かれていません。
 
+出典: [データプロファイリング](https://docs.cloud.google.com/knowledge-catalog/docs/data-profiling-overview)、[自動データ品質](https://docs.cloud.google.com/knowledge-catalog/docs/auto-data-quality-overview)、[Snowflake Horizon のコネクタ](https://docs.cloud.google.com/knowledge-catalog/docs/snowflake-horizon-transfer)
+
 ## 関連
 
 - 自動で取り込まれるデータソース: [データソース](../architecture/data-sources.md)
-- 公式ドキュメント（2026-11-13 確認）: [コネクタ](https://docs.cloud.google.com/knowledge-catalog/docs/connectors)、[Oracle のコネクタ](https://docs.cloud.google.com/knowledge-catalog/docs/oracle-transfer)、[Snowflake Horizon のコネクタ](https://docs.cloud.google.com/knowledge-catalog/docs/snowflake-horizon-transfer)、[Managed connectivity](https://docs.cloud.google.com/knowledge-catalog/docs/managed-connectivity-overview)、[ワークフローでのインポート](https://docs.cloud.google.com/knowledge-catalog/docs/import-using-workflows-custom-source)、[カスタムコネクタの開発](https://docs.cloud.google.com/knowledge-catalog/docs/develop-custom-connector)、[メタデータのインポート](https://docs.cloud.google.com/knowledge-catalog/docs/import-metadata)、[カスタムソースの取り込み](https://docs.cloud.google.com/knowledge-catalog/docs/ingest-custom-sources)、[データプロファイリング](https://docs.cloud.google.com/knowledge-catalog/docs/data-profiling-overview)、[自動データ品質](https://docs.cloud.google.com/knowledge-catalog/docs/auto-data-quality-overview)、[Spark バッチのネットワーク](https://docs.cloud.google.com/dataproc-serverless/docs/concepts/network)、[クロスクラウドのデータアクセス](https://docs.cloud.google.com/lakehouse/docs/about-cross-cloud-data-access)
