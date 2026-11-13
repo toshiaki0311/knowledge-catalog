@@ -5,10 +5,6 @@
 エンリッチメントで生成された説明、概念、列と用語集の対応を、Context Set の中に保存する Entry。\
 元の BigQuery リソースに付いている説明は上書きしない。
 
-## 補足
-
-「overlay」の厳密な定義とデータモデル上の構造は、公式ドキュメントに書かれていない。
-
 ## 関連
 
 - 公式ドキュメント: [エンリッチメントタスクについて](https://docs.cloud.google.com/knowledge-catalog/docs/about-enrichment-tasks)、[Context sets](https://docs.cloud.google.com/knowledge-catalog/docs/context-sets)

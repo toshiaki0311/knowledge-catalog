@@ -15,8 +15,7 @@ BigQuery のジョブが自動でスキャンされ、異なるテーブルの�
 
 ## Entry Link Type との対応
 
-[メタデータモデル](../architecture/メタデータモデル.md) の Entry Link Type に同名の `schema-join` がある。\
-エッジとの対応は公式ドキュメントに明記されていない。
+[メタデータモデル](../architecture/メタデータモデル.md) の Entry Link Type に同名の `schema-join` がある。
 
 ## 関連
 

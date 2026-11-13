@@ -6,8 +6,7 @@
 
 ## 作られ方
 
-Entry Link Type は `dataplex-types.global.packages`。\
-作られ方は公式ドキュメントに書かれていない。
+Entry Link Type は `dataplex-types.global.packages`。
 
 ## 関連
 

@@ -10,8 +10,7 @@
 
 ## Entry Link Type との対応
 
-[メタデータモデル](../architecture/メタデータモデル.md) の Entry Link Type に同名の `definition` がある。\
-エッジとの対応は公式ドキュメントに明記されていない。
+[メタデータモデル](../architecture/メタデータモデル.md) の Entry Link Type に同名の `definition` がある。
 
 ## 関連
 

@@ -9,10 +9,6 @@
 OIDC か Secret Manager で認証する。\
 Knowledge Catalog は、Lakehouse からメタデータとリネージを同期する。
 
-## 補足
-
-正式な定義のあるページは確認していない。
-
 ## 関連
 
 - 公式ドキュメント: [クロスクラウドのデータアクセス](https://docs.cloud.google.com/lakehouse/docs/about-cross-cloud-data-access)

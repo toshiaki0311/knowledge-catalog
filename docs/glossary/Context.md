@@ -6,8 +6,7 @@ Context Set やドメインの文書を、対象のデータ資産に帰属さ�
 
 ## 作られ方
 
-Entry Link Type は `dataplex-types.global.context`。\
-作られ方と、[Reference](Reference.md) との使い分けは、公式ドキュメントに書かれていない。
+Entry Link Type は `dataplex-types.global.context`。
 
 ## 関連
 
