@@ -4,6 +4,12 @@
 
 | トピック | 置き場所 |
 |---|---|
-| コンポーネント間の包含関係・参照関係・データフロー | `architecture/` に新規 |
-| Entry Group、Context Sets、Context Graph の関係 | `architecture/` に新規 |
-| 既存資料と公式ドキュメントの照合 | 既存の全資料 |
+| ビジネス用語集の構造と運用 | `architecture/` に新規 |
+| データリネージ、プロファイリング、自動データ品質の各機能の詳細 | `architecture/` に新規 |
+| MCP サーバーのツールと接続手順 | 新しいカテゴリ |
+| LookupContext API の要求と応答 | 新しいカテゴリ |
+| IAM、VPC Service Controls などのアクセス制御 | 新しいカテゴリ |
+| 料金 | 新しいカテゴリ |
+| Dataplex Universal Catalog からの移行 | 新しいカテゴリ |
+| 公式ドキュメントの構成図に描かれている要素 | `overview.md` の図 |
+| Cloud SQL の取り込みに連携の有効化が要るか | `architecture/data-sources.md` |

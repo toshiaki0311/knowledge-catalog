@@ -64,7 +64,7 @@
 
   <rect x="70" y="530" width="1020" height="110" rx="10" fill="#e8f1fd" stroke="#93c5fd" stroke-width="1.5"/>
   <text x="580" y="576" font-size="22" font-weight="bold" fill="#1d4ed8" text-anchor="middle">Context Graph</text>
-  <text x="580" y="608" font-size="15" fill="#374151" text-anchor="middle">データ資産・業務用語・定義・関係性を結びつける論理グラフ</text>
+  <text x="580" y="608" font-size="15" fill="#374151" text-anchor="middle">技術スキーマ・業務上の意味・データ間の関係・運用上の挙動・信頼シグナルを統合するナレッジグラフ</text>
 
   <line class="line" x1="580" y1="686" x2="580" y2="726"/>
   <polygon points="572,688 588,688 580,675" fill="#6b7280"/>

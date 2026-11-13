@@ -1,18 +1,20 @@
 # 付加情報・管理機能
 
-業務用語、来歴、統計的特徴、品質、AI による説明の 5 種類があります。
+メタデータに業務上の意味と信頼シグナルを足す機能です。
 
 ## 機能
 
-| 機能 | 主な役割 | 具体例 |
+| 機能 | 内容 | 公式ドキュメント |
 |---|---|---|
-| Business Glossary | 業務用語・定義を管理 | 売上＝返品控除後金額 |
-| Data Lineage | データの生成元・加工・移動経路を記録 | |
-| Data Profiling | データの統計的特徴を調査 | |
-| Data Quality | データ品質を検証 | |
-| BigQuery Data Insights | AI によるテーブル説明・SQL 例などの生成 | |
+| Business glossary | 用語集、カテゴリ、用語で業務用語の分類体系を作る。用語は `definition` や `synonym` の Entry Link で Entry や列に対応づける | [用語集の管理](https://docs.cloud.google.com/knowledge-catalog/docs/manage-glossaries) |
+| Data lineage | パイプラインをまたいで、列レベルの変換を追跡する | [リネージ](https://docs.cloud.google.com/knowledge-catalog/docs/use-lineage) |
+| Data profiling | スキャンで distinct count、null の割合、サンプル値などの統計分布を計算し、スキーマの異常や統計的なドリフトを検出する | [データプロファイリング](https://docs.cloud.google.com/knowledge-catalog/docs/data-profiling-overview) |
+| Auto data quality | ルールベースの品質チェックを実行し、スコアを Entry に付ける | [自動データ品質](https://docs.cloud.google.com/knowledge-catalog/docs/auto-data-quality-overview) |
+| Data insights | Gemini in BigQuery がクエリ履歴などから、列の説明、テーブル間の関係、クエリ例を生成する | [データインサイト](https://docs.cloud.google.com/knowledge-catalog/docs/data-insights-structured-data) |
 
 ## 関連
 
 - [全体像](../overview.md) の層②
-- データ資産を表す仕組み: [メタデータモデル](metadata-model.md)
+- Entry Link の種類: [メタデータモデル](metadata-model.md)
+- AI による拡充の進め方: [エンリッチメントタスク](enrichment-tasks.md)
+- 公式ドキュメント（2026-11-13 確認）: [Knowledge Catalog の概要](https://docs.cloud.google.com/knowledge-catalog/docs/introduction)

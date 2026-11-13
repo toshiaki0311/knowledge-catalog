@@ -6,18 +6,23 @@ Google Cloud の Knowledge Catalog の知識を、全体像から個別トピッ
 
 | 資料 | 内容 |
 |---|---|
-| [全体像](docs/overview.md) | 4 つの層と全体構成図 |
+| [全体像](docs/overview.md) | サービスの定義、4 つの層、全体構成図 |
 | [調査予定](docs/backlog.md) | これから資料にするトピック |
 
 ### 構成（architecture）
 
 | 資料 | 内容 |
 |---|---|
-| [データソース](docs/architecture/data-sources.md) | メタデータの収集元 |
-| [メタデータモデル](docs/architecture/metadata-model.md) | Entry、Aspect、Entry Link によるデータ資産の表現 |
-| [付加情報・管理機能](docs/architecture/enrichment-features.md) | 用語、来歴、プロファイル、品質、AI による説明 |
-| [Context Graph](docs/architecture/context-graph.md) | 資産・用語・関係性を統合する論理グラフ |
-| [コンテキストの整備と提供](docs/architecture/context-delivery.md) | Knowledge Studio、Context Sets、MCP と API |
+| [メタデータのライフサイクル](docs/architecture/metadata-lifecycle.md) | 集約、拡充、検索と取得の 3 つの柱 |
+| [データソース](docs/architecture/data-sources.md) | メタデータの収集元と取り込み方法 |
+| [メタデータモデル](docs/architecture/metadata-model.md) | Entry、Aspect、Entry Link とその型 |
+| [コンポーネント間の関係](docs/architecture/component-relationships.md) | メタデータモデルの包含、参照、ロケーションの制約 |
+| [付加情報・管理機能](docs/architecture/enrichment-features.md) | 用語集、リネージ、プロファイリング、品質、インサイト |
+| [Context Graph](docs/architecture/context-graph.md) | 資産、業務上の意味、関係を統合するナレッジグラフ |
+| [Knowledge Studio](docs/architecture/knowledge-studio.md) | コンテキストを整備する画面 |
+| [Context Sets](docs/architecture/context-sets.md) | AI エージェントに渡す知識のまとまり |
+| [エンリッチメントタスク](docs/architecture/enrichment-tasks.md) | AI によるメタデータの提案と承認 |
+| [コンテキストの取得手段](docs/architecture/context-retrieval.md) | MCP サーバーと API |
 | [利用側](docs/architecture/consumers.md) | コンテキストを使う AI エージェントと分析ツール |
 
 ## 管理方針

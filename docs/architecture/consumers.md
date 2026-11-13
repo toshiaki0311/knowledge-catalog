@@ -1,14 +1,25 @@
 # 利用側
 
-AI エージェントや分析ツールが、[コンテキストの整備と提供](context-delivery.md) の接続手段でコンテキストを取得します。
-データそのものは、必要に応じて元の [データソース](data-sources.md) へ直接クエリを実行して取得します。
+Knowledge Catalog のコンテキストは、AI エージェントと分析ツール、そして人が使います。
 
 ## 利用側の種類
 
-- AI エージェント
-- Conversational Analytics
-- BI / 分析アプリ
+| 利用側 | 使い方 |
+|---|---|
+| Conversational Analytics | カタログの用語と検索ツールを使い、業務指標を自然言語で問い合わせる。生成する SQL に検証済みの結合条件と KPI の計算式を使う |
+| Gemini in BigQuery | BigQuery Studio でのプロンプトに対し、用語集、列の説明、クエリ履歴を参照する |
+| Data Engineering Agent in BigQuery | テーブルを探索し、パイプラインの実行中にメタデータを生成する |
+| Gemini Enterprise | Context Sets を使う |
+| カスタムエージェント | ADK や LangChain で作ったエージェントが、メタデータを推論の根拠にする |
+| Google Cloud コンソール | 人がセマンティック検索、関係グラフの表示、用語集の管理を行う |
+
+## データへのアクセス
+
+エージェントは、注入されたコンテキストをもとに SQL を生成し、元のデータウェアハウスに対して実行します。
+Knowledge Catalog は、エージェントのクエリを事前に設定された IAM ロールと照合します。
 
 ## 関連
 
 - [全体像](../overview.md) の層④
+- 取得に使う手段: [コンテキストの取得手段](context-retrieval.md)
+- 公式ドキュメント（2026-11-13 確認）: [Knowledge Catalog の概要](https://docs.cloud.google.com/knowledge-catalog/docs/introduction)、[データコンテキストについて](https://docs.cloud.google.com/knowledge-catalog/docs/about-context)
