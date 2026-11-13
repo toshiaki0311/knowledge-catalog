@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="1190" viewBox="0 0 1260 1190" font-family="'BIZ UDPGothic', 'Noto Sans JP', 'Yu Gothic', 'Meiryo', sans-serif">
+  <defs>
+    <style>
+      .band { fill: #f3f4f6; stroke: #d1d5db; stroke-width: 1.5; }
+      .box { fill: #ffffff; stroke: #d1d5db; stroke-width: 1.5; }
+      .group { fill: #f3f4f6; stroke: none; }
+      .layer { font-size: 20px; font-weight: bold; fill: #1f2937; }
+      .name { font-size: 16px; font-weight: bold; fill: #1f2937; text-anchor: middle; }
+      .head { font-size: 16px; font-weight: bold; fill: #374151; text-anchor: middle; }
+      .note { font-size: 14px; fill: #6b7280; text-anchor: middle; }
+      .flow { font-size: 15px; fill: #4b5563; }
+      .line { stroke: #6b7280; stroke-width: 2; fill: none; }
+    </style>
+  </defs>
+
+  <rect width="1260" height="1190" fill="#ffffff"/>
+
+  <!-- ① データソース層 -->
+  <rect class="band" x="40" y="30" width="1080" height="150" rx="14"/>
+  <text class="layer" x="64" y="64">① データソース層</text>
+  <rect class="box" x="70" y="80" width="320" height="52" rx="8"/>
+  <text class="name" x="230" y="112">BigQuery / DWH</text>
+  <rect class="box" x="420" y="80" width="320" height="52" rx="8"/>
+  <text class="name" x="580" y="112">Cloud Storage</text>
+  <rect class="box" x="770" y="80" width="320" height="52" rx="8"/>
+  <text class="name" x="930" y="112">DB / 外部クラウド</text>
+  <text class="note" x="580" y="162">業務データ・文書・スキーマ・ログなど</text>
+
+  <line class="line" x1="580" y1="182" x2="580" y2="236"/>
+  <polygon points="572,234 588,234 580,247" fill="#6b7280"/>
+  <text class="flow" x="600" y="220">メタデータ収集・登録・スキャン</text>
+
+  <!-- ② Knowledge Catalog -->
+  <rect x="40" y="250" width="1080" height="420" rx="14" fill="#ffffff" stroke="#2563eb" stroke-width="3"/>
+  <text x="580" y="292" font-size="24" font-weight="bold" fill="#1d4ed8" text-anchor="middle">② Knowledge Catalog</text>
+  <text class="note" x="580" y="318">メタデータと業務上の意味を統合管理</text>
+
+  <rect class="group" x="70" y="336" width="495" height="158" rx="10"/>
+  <text class="head" x="317.5" y="362">メタデータ管理（基本構造）</text>
+  <rect class="box" x="85" y="376" width="225" height="44" rx="8"/>
+  <text class="name" x="197.5" y="404">Entry Group / Entry</text>
+  <rect class="box" x="325" y="376" width="225" height="44" rx="8"/>
+  <text class="name" x="437.5" y="404">Entry Type / Aspect</text>
+  <rect class="box" x="85" y="432" width="225" height="44" rx="8"/>
+  <text class="name" x="197.5" y="460">Aspect Type</text>
+  <rect class="box" x="325" y="432" width="225" height="44" rx="8"/>
+  <text class="name" x="437.5" y="460">Entry Link / Link Type</text>
+
+  <rect class="group" x="595" y="336" width="495" height="158" rx="10"/>
+  <text class="head" x="842.5" y="362">付加情報・管理機能</text>
+  <rect class="box" x="610" y="376" width="180" height="44" rx="8"/>
+  <text class="name" x="700" y="404">Business Glossary</text>
+  <rect class="box" x="805" y="376" width="270" height="44" rx="8"/>
+  <text class="name" x="940" y="404">Data Profiling / Quality</text>
+  <rect class="box" x="610" y="432" width="180" height="44" rx="8"/>
+  <text class="name" x="700" y="460">Data Lineage</text>
+  <rect class="box" x="805" y="432" width="270" height="44" rx="8"/>
+  <text class="name" x="940" y="460">Data Insights / Enrichment</text>
+
+  <line x1="317.5" y1="496" x2="317.5" y2="518" stroke="#2563eb" stroke-width="2"/>
+  <polygon points="310.5,516 324.5,516 317.5,528" fill="#2563eb"/>
+  <line x1="842.5" y1="496" x2="842.5" y2="518" stroke="#2563eb" stroke-width="2"/>
+  <polygon points="835.5,516 849.5,516 842.5,528" fill="#2563eb"/>
+
+  <rect x="70" y="530" width="1020" height="110" rx="10" fill="#e8f1fd" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="580" y="576" font-size="22" font-weight="bold" fill="#1d4ed8" text-anchor="middle">Context Graph</text>
+  <text x="580" y="608" font-size="15" fill="#374151" text-anchor="middle">データ資産・業務用語・定義・関係性を結びつける論理グラフ</text>
+
+  <line class="line" x1="580" y1="686" x2="580" y2="726"/>
+  <polygon points="572,688 588,688 580,675" fill="#6b7280"/>
+  <polygon points="572,724 588,724 580,737" fill="#6b7280"/>
+  <text class="flow" x="600" y="711">参照・拡充・整理</text>
+
+  <!-- ③ Knowledge Studio / コンテキスト提供 -->
+  <rect class="band" x="40" y="740" width="1080" height="230" rx="14"/>
+  <text class="layer" x="64" y="774">③ Knowledge Studio / コンテキスト提供</text>
+  <rect class="box" x="70" y="790" width="495" height="68" rx="8"/>
+  <text class="name" x="317.5" y="819">Knowledge Studio</text>
+  <text class="note" x="317.5" y="843">探索・Enrichments・レビュー</text>
+  <rect class="box" x="595" y="790" width="495" height="68" rx="8"/>
+  <text class="name" x="842.5" y="819">Context Sets</text>
+  <text class="note" x="842.5" y="843">AI 向け知識の範囲を定義</text>
+  <rect class="box" x="70" y="874" width="1020" height="68" rx="8"/>
+  <text class="name" x="580" y="903">MCP / Context API / Catalog APIs</text>
+  <text class="note" x="580" y="927">コンテキストの取得インターフェース</text>
+
+  <line class="line" x1="580" y1="972" x2="580" y2="1026"/>
+  <polygon points="572,1024 588,1024 580,1037" fill="#6b7280"/>
+  <text class="flow" x="600" y="1010">コンテキスト取得</text>
+
+  <!-- ④ 利用層 -->
+  <rect class="band" x="40" y="1040" width="1080" height="120" rx="14"/>
+  <text class="layer" x="64" y="1074">④ 利用層</text>
+  <rect class="box" x="70" y="1088" width="320" height="52" rx="8"/>
+  <text class="name" x="230" y="1120">AI エージェント</text>
+  <rect class="box" x="420" y="1088" width="320" height="52" rx="8"/>
+  <text class="name" x="580" y="1120">Conversational Analytics</text>
+  <rect class="box" x="770" y="1088" width="320" height="52" rx="8"/>
+  <text class="name" x="930" y="1120">BI / 分析アプリ</text>
+
+  <!-- 利用層からデータソースへの直接クエリ -->
+  <path class="line" d="M1122,1100 H1180 V105 H1136" stroke-dasharray="7 6"/>
+  <polygon points="1138,97 1138,113 1124,105" fill="#6b7280"/>
+  <text class="flow" transform="translate(1208,602) rotate(90)" text-anchor="middle">必要に応じて元データソースへ直接クエリ</text>
+</svg>
