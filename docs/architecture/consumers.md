@@ -1,5 +1,7 @@
 # 利用側
 
+[全体像](../overview.md) › ④ 利用層
+
 Knowledge Catalog のコンテキストは、AI エージェントと分析ツール、そして人が使います。
 
 ## 利用側の種類
@@ -24,5 +26,4 @@ Knowledge Catalog は、エージェントのクエリを事前に設定され�
 
 ## 関連
 
-- [全体像](../overview.md) の層④
 - 公式ドキュメント（2026-11-13 確認）: [Knowledge Catalog の概要](https://docs.cloud.google.com/knowledge-catalog/docs/introduction)、[データコンテキストについて](https://docs.cloud.google.com/knowledge-catalog/docs/about-context)

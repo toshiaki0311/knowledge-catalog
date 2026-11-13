@@ -1,5 +1,7 @@
 # Context Sets
 
+[全体像](../overview.md) › ③ コンテキスト整備・提供層
+
 意味の情報とデータ資産への参照を、範囲を区切ってまとめたコンテナです。\
 AI エージェントに渡す知識をドメインごとに束ね、際限のない検索をさせないための境界になります。
 
@@ -38,5 +40,4 @@ Context Set は `type="context-set"` の特殊な [Entry Group](metadata-model.m
 
 ## 関連
 
-- [全体像](../overview.md) の層③
 - 公式ドキュメント（2026-11-13 確認）: [Context sets](https://docs.cloud.google.com/knowledge-catalog/docs/context-sets)

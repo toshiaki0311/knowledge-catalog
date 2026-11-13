@@ -1,5 +1,7 @@
 # データソース
 
+[全体像](../overview.md) › ① データソース層
+
 Knowledge Catalog は、Google Cloud のサービスからメタデータを自動で取り込みます。\
 たとえば BigQuery にテーブルを作ると、操作をしなくてもそのテーブルがカタログに登録されます。
 
@@ -25,5 +27,4 @@ Google Cloud の外にあるデータソースは、コネクタや自前のイ�
 
 ## 関連
 
-- [全体像](../overview.md) の層①
 - 公式ドキュメント（2026-11-13 確認）: [メタデータモデル](https://docs.cloud.google.com/knowledge-catalog/docs/metadata-overview)

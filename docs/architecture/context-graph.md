@@ -1,5 +1,7 @@
 # Context Graph
 
+[全体像](../overview.md) › ② Knowledge Catalog 層
+
 技術スキーマ、業務上の意味、データ間の関係、運用上の挙動、信頼シグナルを組み合わせたナレッジグラフです。\
 [メタデータモデル](metadata-model.md) の Entry がノード、Entry Link がエッジになり、[Knowledge Studio](knowledge-studio.md) では対話的に操作できる図として表示されます。
 
@@ -29,5 +31,4 @@ Schema join は BigQuery のジョブ解析から得た結合関係です。
 
 ## 関連
 
-- [全体像](../overview.md) の層②
 - 公式ドキュメント（2026-11-13 確認）: [データコンテキストについて](https://docs.cloud.google.com/knowledge-catalog/docs/about-context)、[Knowledge Studio](https://docs.cloud.google.com/knowledge-catalog/docs/knowledge-studio)

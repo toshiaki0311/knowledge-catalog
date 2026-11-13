@@ -1,5 +1,7 @@
 # Knowledge Studio
 
+[全体像](../overview.md) › ③ コンテキスト整備・提供層
+
 企業のメタデータをキュレーションして統合し、生成 AI アプリを業務のコンテキストにグラウンディングさせるための画面です。\
 Preview の機能です。
 
@@ -26,5 +28,4 @@ Preview の機能です。
 
 ## 関連
 
-- [全体像](../overview.md) の層③
 - 公式ドキュメント（2026-11-13 確認）: [Knowledge Studio](https://docs.cloud.google.com/knowledge-catalog/docs/knowledge-studio)

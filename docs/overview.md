@@ -10,15 +10,23 @@ Knowledge Catalog は、構造化・非構造化データにまたがって技�
 
 4 つの層はこの資料群での整理であり、公式の区分ではありません。
 
-## 層ごとの資料
+## 一連の流れ
 
-| 層 | 資料 |
-|---|---|
-| 全体 | [メタデータのライフサイクル](architecture/metadata-lifecycle.md) |
-| ① データソース層 | [データソース](architecture/data-sources.md) |
-| ② Knowledge Catalog 層 | [メタデータモデル](architecture/metadata-model.md)、[付加情報・管理機能](architecture/enrichment-features.md)、[Context Graph](architecture/context-graph.md) |
-| ③ コンテキスト整備・提供層 | [Knowledge Studio](architecture/knowledge-studio.md)、[Context Sets](architecture/context-sets.md)、[エンリッチメントタスク](architecture/enrichment-tasks.md)、[コンテキストの取得手段](architecture/context-retrieval.md) |
-| ④ 利用層 | [利用側](architecture/consumers.md) |
+メタデータがデータソースから AI エージェントに届くまでの流れです。\
+例は、BigQuery の `customer_orders` テーブルを販売分析のエージェントが使う場合です。
+
+| 順 | 層 | 起こること | 例 | 資料 |
+|---|---|---|---|---|
+| 1 | ① | データソースのメタデータが取り込まれる | テーブルを作ると、自動でカタログに登録される | [データソース](architecture/data-sources.md) |
+| 2 | ② | 資産が Entry、メタデータが Aspect として表される | テーブルが Entry になり、列の一覧が Aspect として付く | [メタデータモデル](architecture/metadata-model.md) |
+| 3 | ② | 業務上の意味と信頼の情報が足される | `email_address` 列に用語の定義が結ばれ、品質のスコアが付く | [付加情報・管理機能](architecture/enrichment-features.md) |
+| 4 | ② | 資産と意味がグラフとしてつながる | テーブルから、用語や結合できるテーブルをたどれる | [Context Graph](architecture/context-graph.md) |
+| 5 | ③ | AI に渡す範囲がまとめられる | 販売分析用の Context Set に、テーブルの説明、用語、クエリテンプレートを入れる | [Knowledge Studio](architecture/knowledge-studio.md)、[Context Sets](architecture/context-sets.md)、[エンリッチメントタスク](architecture/enrichment-tasks.md) |
+| 6 | ③ | エージェントがコンテキストを取得する | MCP か API で、用語の定義と結合条件を受け取る | [コンテキストの取得手段](architecture/context-retrieval.md) |
+| 7 | ④ | エージェントがデータに問い合わせる | SQL を生成し、BigQuery で実行する | [利用側](architecture/consumers.md) |
+
+公式ドキュメントはこの流れを 3 つの柱で説明しています。\
+対応は [メタデータのライフサイクル](architecture/metadata-lifecycle.md) にあります。
 
 ## 関連
 

@@ -1,5 +1,7 @@
 # 付加情報・管理機能
 
+[全体像](../overview.md) › ② Knowledge Catalog 層
+
 メタデータに業務上の意味と信頼シグナルを足す機能です。
 
 | 機能 | 内容 | 例 | 公式ドキュメント |
@@ -12,5 +14,4 @@
 
 ## 関連
 
-- [全体像](../overview.md) の層②
 - 公式ドキュメント（2026-11-13 確認）: [Knowledge Catalog の概要](https://docs.cloud.google.com/knowledge-catalog/docs/introduction)

@@ -1,5 +1,7 @@
 # メタデータモデル
 
+[全体像](../overview.md) › ② Knowledge Catalog 層
+
 Knowledge Catalog は、データ資産を Entry として表し、Aspect でメタデータを付け、Entry Link で資産どうしの関係を表します。
 
 ![メタデータモデルの包含と参照](../images/metadata-model.png)
@@ -57,5 +59,4 @@ Aspect は Entry、Entry の列、Entry Link の 3 か所に付きます。\
 
 ## 関連
 
-- [全体像](../overview.md) の層②
 - 公式ドキュメント（2026-11-13 確認）: [メタデータモデル](https://docs.cloud.google.com/knowledge-catalog/docs/metadata-overview)

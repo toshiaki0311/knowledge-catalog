@@ -1,5 +1,7 @@
 # コンテキストの取得手段
 
+[全体像](../overview.md) › ③ コンテキスト整備・提供層
+
 AI エージェントやアプリは、MCP サーバーか API で Knowledge Catalog のコンテキストを取得します。
 
 ## 手段
@@ -21,5 +23,4 @@ AI エージェントやアプリは、MCP サーバーか API で Knowledge Cat
 
 ## 関連
 
-- [全体像](../overview.md) の層③
 - 公式ドキュメント（2026-11-13 確認）: [MCP の概要](https://docs.cloud.google.com/knowledge-catalog/docs/mcp-overview)、[データコンテキストの取得](https://docs.cloud.google.com/knowledge-catalog/docs/retrieve-data-context)、[資産の検索](https://docs.cloud.google.com/knowledge-catalog/docs/search-assets)

@@ -1,5 +1,7 @@
 # メタデータのライフサイクル
 
+[全体像](../overview.md) › 全体
+
 Knowledge Catalog はメタデータを 3 つの柱で扱います。
 
 | 柱 | 公式の呼び方 | 内容 | 例 |
@@ -10,5 +12,4 @@ Knowledge Catalog はメタデータを 3 つの柱で扱います。
 
 ## 関連
 
-- [全体像](../overview.md)
 - 公式ドキュメント（2026-11-13 確認）: [Knowledge Catalog の概要](https://docs.cloud.google.com/knowledge-catalog/docs/introduction)

@@ -1,5 +1,7 @@
 # エンリッチメントタスク
 
+[全体像](../overview.md) › ③ コンテキスト整備・提供層
+
 エンリッチメントエージェントが対象のデータ資産を分析し、メタデータの追加や変更を提案する仕組みです。\
 たとえば `email_address` 列に説明がなければ、説明文の追加を提案し、人が承認すると反映されます。
 
@@ -43,5 +45,4 @@ BigQuery のリソースに付いている説明は上書きされません。
 
 ## 関連
 
-- [全体像](../overview.md) の層③
 - 公式ドキュメント（2026-11-13 確認）: [エンリッチメントタスクについて](https://docs.cloud.google.com/knowledge-catalog/docs/about-enrichment-tasks)、[エンリッチメントの実行管理](https://docs.cloud.google.com/knowledge-catalog/docs/manage-enrichment-runs)

@@ -6,8 +6,8 @@ Google Cloud の Knowledge Catalog の知識を、全体像から個別トピッ
 
 | 資料 | 内容 |
 |---|---|
-| [全体像](docs/overview.md) | サービスの定義、全体構成図、層ごとの資料 |
-| [調査予定](docs/backlog.md) | これから資料にするトピック |
+| [全体像](docs/overview.md) | サービスの定義、全体構成図、一連の流れ。最初に読む資料 |
+| [調査予定](docs/backlog.md) | 知りたいトピックと、裏が取れていない点 |
 
 ### 構成（architecture）
 
