@@ -7,6 +7,10 @@
 
 たとえば `customer_orders` テーブルのノードから、結合できる `customers` テーブルと、`email_address` 列の意味を定義する用語をたどることができる。
 
+![Context Graph のノードとエッジの例](../images/context-graph.png)
+
+図は説明用の例。
+
 ## ノード
 
 - テーブル、ビュー
