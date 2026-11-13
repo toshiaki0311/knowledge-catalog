@@ -1,7 +1,7 @@
 # Knowledge Catalog の全体像
 
-Knowledge Catalog は、構造化・非構造化データにまたがって技術メタデータと業務上の意味を統合する Google Cloud のサービスです。
-旧称は Dataplex Universal Catalog です。
+Knowledge Catalog は、構造化・非構造化データにまたがって技術メタデータと業務上の意味を統合する Google Cloud のサービスです。\
+旧称は Dataplex Universal Catalog です。\
 データ資産の発見、データ品質の検証、生成 AI アプリのグラウンディングに使います。
 
 ## 全体構成図

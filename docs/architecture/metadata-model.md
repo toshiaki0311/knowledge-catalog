@@ -18,13 +18,13 @@ Knowledge Catalog は、データ資産を Entry として表し、Aspect でメ
 | Entry Link | 2 つの Entry、または Entry 内の列どうしの意味的な関係 | `customer_orders` と `customers` テーブルが結合できるという関係 |
 | Entry Link Type | Entry Link の種類 | `schema-join` |
 
-Entry の識別子は、親の Entry Group の中で一意です。
+Entry の識別子は、親の Entry Group の中で一意です。\
 Entry を作るときは、Entry Type が必須とする Aspect が揃っているか検証されます。
 
 ## Aspect の付与先
 
-Aspect は Entry、Entry の列、Entry Link の 3 か所に付きます。
-列は `schema` の Aspect を Entry に付けると生成され、ネストは `customer.address.postal_code` のようにドットで表します。
+Aspect は Entry、Entry の列、Entry Link の 3 か所に付きます。\
+列は `schema` の Aspect を Entry に付けると生成され、ネストは `customer.address.postal_code` のようにドットで表します。\
 `schema-join` の Entry Link には Aspect を付けられません。
 
 ## Entry Link Type

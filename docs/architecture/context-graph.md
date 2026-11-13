@@ -1,6 +1,6 @@
 # Context Graph
 
-技術スキーマ、業務上の意味、データ間の関係、運用上の挙動、信頼シグナルを組み合わせたナレッジグラフです。
+技術スキーマ、業務上の意味、データ間の関係、運用上の挙動、信頼シグナルを組み合わせたナレッジグラフです。\
 [メタデータモデル](metadata-model.md) の Entry がノード、Entry Link がエッジになり、[Knowledge Studio](knowledge-studio.md) では対話的に操作できる図として表示されます。
 
 たとえば `customer_orders` テーブルのノードから、結合できる `customers` テーブルと、`email_address` 列の意味を定義する用語をたどれます。
@@ -17,7 +17,7 @@
 
 ## エッジ
 
-Knowledge Studio の表示では、Schema join、Definition、Reference、Context、Packages に分かれます。
+Knowledge Studio の表示では、Schema join、Definition、Reference、Context、Packages に分かれます。\
 Schema join は BigQuery のジョブ解析から得た結合関係です。
 
 ## データリネージとの違い

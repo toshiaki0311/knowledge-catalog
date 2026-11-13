@@ -1,13 +1,13 @@
 # Context Sets
 
-意味の情報とデータ資産への参照を、範囲を区切ってまとめたコンテナです。
+意味の情報とデータ資産への参照を、範囲を区切ってまとめたコンテナです。\
 AI エージェントに渡す知識をドメインごとに束ね、際限のない検索をさせないための境界になります。
 
 たとえば販売分析用の Context Set には、注文テーブルの説明、用語「売上」の定義、月次売上を出すクエリテンプレートを入れます。
 
 ## 実体
 
-Context Set は `type="context-set"` の特殊な [Entry Group](metadata-model.md) です。
+Context Set は `type="context-set"` の特殊な [Entry Group](metadata-model.md) です。\
 中身はカスタムの Entry と Aspect として Knowledge Catalog に保存され、業務用語、SQL テンプレート、Markdown の文書は Aspect に入ります。
 
 ## 中身
