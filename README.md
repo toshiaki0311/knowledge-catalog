@@ -24,6 +24,12 @@ Google Cloud の Knowledge Catalog の知識を、全体像から個別トピッ
 | [コンテキストの取得手段](docs/architecture/context-retrieval.md) | MCP サーバーと API |
 | [利用側](docs/architecture/consumers.md) | コンテキストを使う AI エージェントと分析ツール |
 
+### 気になること（questions）
+
+| 資料 | 内容 |
+|---|---|
+| [分離された外部データソースからのメタデータ取り込み](docs/questions/isolated-external-sources.md) | 別クラウド、SaaS、オンプレミスにあるデータソースの取り込み方法 |
+
 ## 管理方針
 
 資料を追加する手順と原則は [CLAUDE.md](CLAUDE.md) にあります。
