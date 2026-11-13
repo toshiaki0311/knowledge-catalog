@@ -81,7 +81,7 @@
   <text class="name" x="842.5" y="819">Context Sets</text>
   <text class="note" x="842.5" y="843">AI 向け知識の範囲を定義</text>
   <rect class="box" x="70" y="874" width="1020" height="68" rx="8"/>
-  <text class="name" x="580" y="903">MCP / Context API / Catalog APIs</text>
+  <text class="name" x="580" y="903">MCP / LookupContext API / Catalog APIs</text>
   <text class="note" x="580" y="927">コンテキストの取得インターフェース</text>
 
   <line class="line" x1="580" y1="972" x2="580" y2="1026"/>
@@ -92,11 +92,11 @@
   <rect class="band" x="40" y="1040" width="1080" height="120" rx="14"/>
   <text class="layer" x="64" y="1074">④ 利用層</text>
   <rect class="box" x="70" y="1088" width="320" height="52" rx="8"/>
-  <text class="name" x="230" y="1120">AI エージェント</text>
+  <text class="name" x="230" y="1120">Gemini Enterprise</text>
   <rect class="box" x="420" y="1088" width="320" height="52" rx="8"/>
   <text class="name" x="580" y="1120">Conversational Analytics</text>
   <rect class="box" x="770" y="1088" width="320" height="52" rx="8"/>
-  <text class="name" x="930" y="1120">BI / 分析アプリ</text>
+  <text class="name" x="930" y="1120">カスタムエージェント</text>
 
   <!-- 利用層からデータソースへの直接クエリ -->
   <path class="line" d="M1122,1100 H1180 V105 H1136" stroke-dasharray="7 6"/>

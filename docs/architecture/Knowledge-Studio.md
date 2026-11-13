@@ -5,6 +5,8 @@
 企業のメタデータをキュレーションして統合し、生成 AI アプリを業務のコンテキストに[グラウンディング](../glossary/グラウンディング.md)させるための画面。\
 Preview の機能。
 
+![Knowledge Studio の入力、領域、利用側](../images/knowledge-studio.png)
+
 ## 3 つの領域
 
 | 領域 | できること | 例 |

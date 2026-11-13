@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" font-family="'BIZ UDPGothic', 'Noto Sans JP', 'Yu Gothic', 'Meiryo', sans-serif">
+  <defs><style>
+    .ag { fill: #eff6ff; stroke: #2563eb; stroke-width: 1.5; }
+    .hu { fill: #ecfdf5; stroke: #10b981; stroke-width: 1.5; }
+    .num { font-size: 15px; font-weight: bold; fill: #6b7280; text-anchor: middle; }
+    .name { font-size: 15px; font-weight: bold; fill: #1f2937; text-anchor: middle; }
+    .sub { font-size: 12.5px; fill: #6b7280; text-anchor: middle; }
+    .flow { stroke: #6b7280; stroke-width: 2; fill: none; }
+    .legend { font-size: 14px; fill: #374151; }
+  </style></defs>
+  <rect width="1200" height="330" fill="#ffffff"/>
+  <rect class="hu" x="15" y="50" width="170" height="96" rx="10"/><text class="num" x="100" y="76">1</text><text class="name" x="100" y="102">実行を始める</text><text class="sub" x="100" y="124">手動か定期実行</text>
+  <rect class="ag" x="215" y="50" width="170" height="96" rx="10"/><text class="num" x="300" y="76">2</text><text class="name" x="300" y="102">分析する</text><text class="sub" x="300" y="124">シグナルと文書</text>
+  <rect class="ag" x="415" y="50" width="170" height="96" rx="10"/><text class="num" x="500" y="76">3</text><text class="name" x="500" y="102">提案を下書きする</text><text class="sub" x="500" y="124">説明、用語、結合条件</text>
+  <rect class="ag" x="615" y="50" width="170" height="96" rx="10"/><text class="num" x="700" y="76">4</text><text class="name" x="700" y="102">検証する</text><text class="sub" x="700" y="124">SQL の構文、信頼度</text>
+  <rect class="ag" x="815" y="50" width="170" height="96" rx="10"/><text class="num" x="900" y="76">5</text><text class="name" x="900" y="102">保留する</text><text class="sub" x="900" y="124">change request</text>
+  <rect class="hu" x="1015" y="50" width="170" height="96" rx="10"/><text class="num" x="1100" y="76">6</text><text class="name" x="1100" y="102">承認する</text><text class="sub" x="1100" y="124">差分を確認</text>
+  <line class="flow" x1="185" y1="98" x2="203" y2="98"/><polygon points="201,91 201,105 214,98" fill="#6b7280"/>
+  <line class="flow" x1="385" y1="98" x2="403" y2="98"/><polygon points="401,91 401,105 414,98" fill="#6b7280"/>
+  <line class="flow" x1="585" y1="98" x2="603" y2="98"/><polygon points="601,91 601,105 614,98" fill="#6b7280"/>
+  <line class="flow" x1="785" y1="98" x2="803" y2="98"/><polygon points="801,91 801,105 814,98" fill="#6b7280"/>
+  <line class="flow" x1="985" y1="98" x2="1003" y2="98"/><polygon points="1001,91 1001,105 1014,98" fill="#6b7280"/>
+  <line class="flow" x1="1100" y1="146" x2="1100" y2="196"/><polygon points="1093,194 1107,194 1100,208" fill="#6b7280"/>
+  <rect x="965" y="210" width="220" height="70" rx="10" fill="#fdf2f8" stroke="#ec4899" stroke-width="1.5"/>
+  <text class="name" x="1075" y="240">Context Set に保存</text><text class="sub" x="1075" y="262">overlay の Entry として</text>
+  <rect class="ag" x="15" y="236" width="26" height="20" rx="4"/><text class="legend" x="52" y="252">エンリッチメントエージェントが行う</text>
+  <rect class="hu" x="330" y="236" width="26" height="20" rx="4"/><text class="legend" x="367" y="252">人が行う</text>
+</svg>

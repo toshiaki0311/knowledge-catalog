@@ -14,6 +14,8 @@ Context Set は `type="context-set"` の特殊な [Entry Group](メタデータ�
 
 ## 中身
 
+![Context Set の中身の構成](../images/context-sets.png)
+
 | Entry の種類 | 内容 | パス |
 |---|---|---|
 | ルートインデックス | エージェントが最初に読む入口 | `agents` |
