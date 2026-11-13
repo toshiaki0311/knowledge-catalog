@@ -2,10 +2,10 @@
 
 [全体像](../全体像.md) › ② Knowledge Catalog 層
 
-技術スキーマ、業務上の意味、データ間の関係、運用上の挙動、信頼シグナルを組み合わせたナレッジグラフです。\
-[メタデータモデル](メタデータモデル.md) の Entry がノード、Entry Link がエッジになり、[Knowledge Studio](Knowledge-Studio.md) では対話的に操作できる図として表示されます。
+技術スキーマ、業務上の意味、データ間の関係、運用上の挙動、信頼シグナルを組み合わせたナレッジグラフ。\
+[メタデータモデル](メタデータモデル.md) の Entry がノード、Entry Link がエッジになり、[Knowledge Studio](Knowledge-Studio.md) では対話的に操作できる図として表示される。
 
-たとえば `customer_orders` テーブルのノードから、結合できる `customers` テーブルと、`email_address` 列の意味を定義する用語をたどれます。
+たとえば `customer_orders` テーブルのノードから、結合できる `customers` テーブルと、`email_address` 列の意味を定義する用語をたどることができる。
 
 ## ノード
 
@@ -19,8 +19,8 @@
 
 ## エッジ
 
-Knowledge Studio の表示では、Schema join、Definition、Reference、Context、Packages に分かれます。\
-Schema join は BigQuery のジョブ解析から得た結合関係です。
+Knowledge Studio の表示では、Schema join、Definition、Reference、Context、Packages に分かれる。\
+Schema join は BigQuery のジョブ解析から得た結合関係。
 
 ## データリネージとの違い
 

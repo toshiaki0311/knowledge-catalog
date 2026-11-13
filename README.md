@@ -1,6 +1,6 @@
 # knowledge-catalog
 
-Google Cloud の Knowledge Catalog の知識を、全体像から個別トピックへ広げながら蓄積するリポジトリです。
+Google Cloud の Knowledge Catalog の知識を、全体像から個別トピックへ広げながら蓄積するリポジトリ。
 
 ## 目次
 
@@ -33,4 +33,4 @@ Google Cloud の Knowledge Catalog の知識を、全体像から個別トピッ
 
 ## 管理方針
 
-資料を追加する手順と原則は [CLAUDE.md](CLAUDE.md) にあります。
+資料を追加する手順と原則は [CLAUDE.md](CLAUDE.md) にある。
