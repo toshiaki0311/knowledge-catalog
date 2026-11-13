@@ -15,5 +15,4 @@
 
 ## 関連
 
-- 使われている資料: [Context Graph](../architecture/Context-Graph.md)
-- 公式ドキュメント（2026-11-13 確認）: [Knowledge Studio](https://docs.cloud.google.com/knowledge-catalog/docs/knowledge-studio)、[データ資産の探索](https://docs.cloud.google.com/knowledge-catalog/docs/explore-data-assets)
+- 公式ドキュメント: [Knowledge Studio](https://docs.cloud.google.com/knowledge-catalog/docs/knowledge-studio)、[データ資産の探索](https://docs.cloud.google.com/knowledge-catalog/docs/explore-data-assets)

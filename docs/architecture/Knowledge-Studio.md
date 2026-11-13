@@ -23,4 +23,4 @@ Preview の機能。
 
 ## 関連
 
-- 公式ドキュメント（2026-11-13 確認）: [Knowledge Studio](https://docs.cloud.google.com/knowledge-catalog/docs/knowledge-studio)
+- 公式ドキュメント: [Knowledge Studio](https://docs.cloud.google.com/knowledge-catalog/docs/knowledge-studio)

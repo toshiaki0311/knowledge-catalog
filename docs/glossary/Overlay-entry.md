@@ -11,5 +11,4 @@
 
 ## 関連
 
-- 使われている資料: [エンリッチメントタスク](../architecture/エンリッチメントタスク.md)
-- 公式ドキュメント（2026-11-13 確認）: [エンリッチメントタスクについて](https://docs.cloud.google.com/knowledge-catalog/docs/about-enrichment-tasks)、[Context sets](https://docs.cloud.google.com/knowledge-catalog/docs/context-sets)
+- 公式ドキュメント: [エンリッチメントタスクについて](https://docs.cloud.google.com/knowledge-catalog/docs/about-enrichment-tasks)、[Context sets](https://docs.cloud.google.com/knowledge-catalog/docs/context-sets)

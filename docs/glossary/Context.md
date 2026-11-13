@@ -11,5 +11,4 @@ Entry Link Type は `dataplex-types.global.context`。\
 
 ## 関連
 
-- 使われている資料: [Context Graph](../architecture/Context-Graph.md)
-- 公式ドキュメント（2026-11-13 確認）: [データ資産の探索](https://docs.cloud.google.com/knowledge-catalog/docs/explore-data-assets)
+- 公式ドキュメント: [データ資産の探索](https://docs.cloud.google.com/knowledge-catalog/docs/explore-data-assets)

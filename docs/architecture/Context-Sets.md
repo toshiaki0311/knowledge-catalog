@@ -35,4 +35,4 @@ Context Set は `type="context-set"` の特殊な [Entry Group](メタデータ�
 
 ## 関連
 
-- 公式ドキュメント（2026-11-13 確認）: [Context sets](https://docs.cloud.google.com/knowledge-catalog/docs/context-sets)
+- 公式ドキュメント: [Context sets](https://docs.cloud.google.com/knowledge-catalog/docs/context-sets)

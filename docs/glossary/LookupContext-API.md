@@ -15,5 +15,4 @@
 
 ## 関連
 
-- 使われている資料: [コンテキストの取得手段](../architecture/コンテキストの取得手段.md)
-- 公式ドキュメント（2026-11-13 確認）: [データコンテキストの取得](https://docs.cloud.google.com/knowledge-catalog/docs/retrieve-data-context)
+- 公式ドキュメント: [データコンテキストの取得](https://docs.cloud.google.com/knowledge-catalog/docs/retrieve-data-context)

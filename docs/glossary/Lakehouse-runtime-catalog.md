@@ -15,5 +15,4 @@ Knowledge Catalog は、Lakehouse からメタデータとリネージを同期�
 
 ## 関連
 
-- 使われている資料: [分離された外部データソースからのメタデータ取り込み](../questions/分離された外部データソースからのメタデータ取り込み.md)
-- 公式ドキュメント（2026-11-13 確認）: [クロスクラウドのデータアクセス](https://docs.cloud.google.com/lakehouse/docs/about-cross-cloud-data-access)
+- 公式ドキュメント: [クロスクラウドのデータアクセス](https://docs.cloud.google.com/lakehouse/docs/about-cross-cloud-data-access)

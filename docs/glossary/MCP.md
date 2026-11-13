@@ -12,5 +12,4 @@ Model Context Protocol の略。
 
 ## 関連
 
-- 使われている資料: [全体像](../全体像.md)、[コンテキストの取得手段](../architecture/コンテキストの取得手段.md)
-- 公式ドキュメント（2026-11-13 確認）: [MCP の概要](https://docs.cloud.google.com/knowledge-catalog/docs/mcp-overview)
+- 公式ドキュメント: [MCP の概要](https://docs.cloud.google.com/knowledge-catalog/docs/mcp-overview)

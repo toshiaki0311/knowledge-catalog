@@ -10,5 +10,4 @@
 
 ## 関連
 
-- 使われている資料: [分離された外部データソースからのメタデータ取り込み](../questions/分離された外部データソースからのメタデータ取り込み.md)
-- 公式ドキュメント（2026-11-13 確認）: [Oracle のコネクタ](https://docs.cloud.google.com/knowledge-catalog/docs/oracle-transfer)
+- 公式ドキュメント: [Oracle のコネクタ](https://docs.cloud.google.com/knowledge-catalog/docs/oracle-transfer)

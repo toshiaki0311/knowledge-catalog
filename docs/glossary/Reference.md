@@ -15,5 +15,4 @@ Context Set の中にある `customer_orders` の説明が、`@bigquery` にあ�
 
 ## 関連
 
-- 使われている資料: [Context Graph](../architecture/Context-Graph.md)、[Context Sets](../architecture/Context-Sets.md)
-- 公式ドキュメント（2026-11-13 確認）: [データ資産の探索](https://docs.cloud.google.com/knowledge-catalog/docs/explore-data-assets)、[Context sets](https://docs.cloud.google.com/knowledge-catalog/docs/context-sets)
+- 公式ドキュメント: [データ資産の探索](https://docs.cloud.google.com/knowledge-catalog/docs/explore-data-assets)、[Context sets](https://docs.cloud.google.com/knowledge-catalog/docs/context-sets)
