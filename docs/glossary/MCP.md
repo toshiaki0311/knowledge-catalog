@@ -32,16 +32,6 @@ Dataplex API を有効にすると、リモートの MCP サーバーも自動�
 
 エージェントが `system:bigquery AND type:table AND name:customers` で `search_entries` を呼び、見つかったテーブルを `lookup_context` に渡して、スキーマ、データ品質、関連する資産を受け取る。
 
-## 認証と権限
-
-| 項目 | 内容 |
-|---|---|
-| 認証 | OAuth 2.0 と IAM。エージェント用に専用の ID を作ることが推奨されている |
-| リモートに必要なロール | `roles/mcp.toolUser` と `roles/dataplex.catalogAdmin` |
-| ローカルに必要なロール | `roles/dataplex.catalogViewer` |
-| 接続できるクライアントの例 | Claude、ChatGPT、Antigravity、自作のアプリ |
-| 保護 | IAM のポリシーでツール単位に制御できる。Model Armor でプロンプトと応答を検査できる。監査ログが残る |
-
 ## 関連
 
 - 公式ドキュメント: [MCP の概要](https://docs.cloud.google.com/knowledge-catalog/docs/mcp-overview)、[リモート MCP サーバーの利用](https://docs.cloud.google.com/knowledge-catalog/docs/use-remote-mcp)、[MCP Toolbox の利用](https://docs.cloud.google.com/knowledge-catalog/docs/pre-built-tools-with-mcp-toolbox)、[データリネージの MCP サーバー](https://docs.cloud.google.com/knowledge-catalog/docs/use-lineage-mcp)、[MCP リファレンス](https://docs.cloud.google.com/knowledge-catalog/docs/reference/mcp)
