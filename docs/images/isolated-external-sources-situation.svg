@@ -26,17 +26,17 @@
   <text x="380" y="404" font-size="14" font-weight="bold" fill="#b91c1c" text-anchor="middle">ネットワークやセキュリティ上の分離</text>
 
   <!-- Google Cloud の外 -->
-  <rect x="430" y="20" width="360" height="360" rx="14" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
-  <text x="450" y="50" font-size="16" font-weight="bold" fill="#9a3412">Google Cloud の外にあるデータソース</text>
-  <rect class="box" x="460" y="70" width="300" height="72" rx="8"/>
-  <text class="name" x="610" y="101">別クラウド</text>
-  <text class="sub" x="610" y="124">Snowflake、Databricks など</text>
-  <rect class="box" x="460" y="174" width="300" height="72" rx="8"/>
-  <text class="name" x="610" y="205">SaaS</text>
-  <text class="sub" x="610" y="228">Salesforce、SAP など</text>
-  <rect class="box" x="460" y="278" width="300" height="72" rx="8"/>
-  <text class="name" x="610" y="309">顧客オンプレミス</text>
-  <text class="sub" x="610" y="332">ストレージ、データベース</text>
+  <rect x="430" y="30" width="360" height="350" rx="14" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="450" y="60" font-size="16" font-weight="bold" fill="#9a3412">Google Cloud の外にあるデータソース</text>
+  <rect class="box" x="460" y="80" width="300" height="72" rx="8"/>
+  <text class="name" x="610" y="111">別クラウド</text>
+  <text class="sub" x="610" y="134">Snowflake、Databricks など</text>
+  <rect class="box" x="460" y="184" width="300" height="72" rx="8"/>
+  <text class="name" x="610" y="215">SaaS</text>
+  <text class="sub" x="610" y="238">Salesforce、SAP など</text>
+  <rect class="box" x="460" y="288" width="300" height="72" rx="8"/>
+  <text class="name" x="610" y="319">顧客オンプレミス</text>
+  <text class="sub" x="610" y="342">ストレージ、データベース</text>
 
   <!-- AI エージェント -->
   <rect x="890" y="180" width="270" height="80" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
@@ -44,12 +44,12 @@
   <text class="sub" x="1025" y="240">データソースへの経路と認証を持つ</text>
   <text x="1025" y="164" font-size="14" font-weight="bold" fill="#047857" text-anchor="middle">直接アクセスできる</text>
 
-  <path class="ok" d="M890,220 H830 V106 H774"/>
-  <polygon points="776,99 776,113 762,106" fill="#059669"/>
-  <path class="ok" d="M890,220 H830 V210 H774"/>
-  <polygon points="776,203 776,217 762,210" fill="#059669"/>
-  <path class="ok" d="M890,220 H830 V314 H774"/>
-  <polygon points="776,307 776,321 762,314" fill="#059669"/>
+  <path class="ok" d="M890,220 H830 V116 H774"/>
+  <polygon points="776,109 776,123 762,116" fill="#059669"/>
+  <path class="ok" d="M890,220 H774"/>
+  <polygon points="776,213 776,227 762,220" fill="#059669"/>
+  <path class="ok" d="M890,220 H830 V324 H774"/>
+  <polygon points="776,317 776,331 762,324" fill="#059669"/>
 
   <!-- コンテキストの取得 -->
   <path class="ctx" d="M1025,260 V450 H175 V274"/>
