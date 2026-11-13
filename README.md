@@ -28,7 +28,8 @@ Google Cloud の Knowledge Catalog の知識を、全体像から個別トピッ
 
 | 資料 | 内容 |
 |---|---|
-| [分離された外部データソースからのメタデータ取り込み](docs/questions/isolated-external-sources.md) | 別クラウド、SaaS、オンプレミスにあるデータソースの取り込み方法 |
+| [分離された外部データソースという状況は起こるか](docs/questions/isolated-external-sources-situation.md) | エージェントからは届くが Knowledge Catalog とは分離されたデータソースが生じる場面 |
+| [分離された外部データソースからのメタデータ取り込み](docs/questions/isolated-external-sources-ingestion.md) | 別クラウド、SaaS、オンプレミスにあるデータソースの取り込み方法 |
 
 ## 管理方針
 

@@ -2,38 +2,20 @@
 
 ## 前提
 
-データソースが、別クラウド、Salesforce や SAP などの SaaS、顧客オンプレミスのストレージにあるとします。
-AI エージェントからは直接アクセスできますが、Knowledge Catalog とはネットワークやセキュリティ上で分離されています。
+データソースが Google Cloud の外にあり、AI エージェントからは直接アクセスできますが、Knowledge Catalog とは分離されています。
+状況の詳細は [分離された外部データソースという状況は起こるか](isolated-external-sources-situation.md) にあります。
 
-![前提となる状況](../images/isolated-external-sources-situation.png)
-
-## 問い 1
-
-こうした状況は、実際に発生しうるか。
-
-## 回答 1
-
-発生しえます。
-エージェントとカタログでは、データソースへの到達経路が別だからです。
-次の表は公式ドキュメントの記述ではなく、構成から考えた例です。
-
-| データソース | エージェント側 | カタログ側 |
-|---|---|---|
-| Salesforce や SAP などの SaaS | SaaS の API に OAuth などで直接つなぐ | そのプロジェクトには接続がない |
-| 別クラウドの Snowflake や Databricks | 直接クエリする | ネットワークから到達できない |
-| 顧客オンプレミスのストレージ | 顧客の環境内で動く | Google Cloud からオンプレミスへ入る経路が許可されていない |
-
-## 問い 2
+## 問い
 
 この状況で、Knowledge Catalog へのメタデータの収集・登録・スキャンはどう行えばよいか。
 
-## 回答 2
+## 回答
 
 Knowledge Catalog 自身がデータソースへ取りに行くのではなく、データソースに届く場所で抽出し、メタデータだけを渡します。
 方法は 4 つあり、Google Cloud からデータソースへ接続できるかどうかで選びます。
 スキャンの対象は BigQuery などのテーブルに限られます。
 
-![取り込み方法ごとの接続の向き](../images/isolated-external-sources.png)
+![取り込み方法ごとの接続の向き](../images/isolated-external-sources-ingestion.png)
 
 | 方法 | 仕組み | 接続の向き |
 |---|---|---|

@@ -21,7 +21,7 @@ AlloyDB と Cloud SQL は、連携を有効化してから取り込まれます�
 ## 自動で取り込まれないソース
 
 Google Cloud の外にあるデータソースは、コネクタや自前のインポートで取り込みます。
-方法は [分離された外部データソースからのメタデータ取り込み](../questions/isolated-external-sources.md) にあります。
+方法は [分離された外部データソースからのメタデータ取り込み](../questions/isolated-external-sources-ingestion.md) にあります。
 
 ## 関連
 
