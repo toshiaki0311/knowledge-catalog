@@ -33,16 +33,6 @@
 承認された内容は、[Context Sets](context-sets.md) の中に overlay の Entry として保存されます。\
 BigQuery のリソースに付いている説明は上書きされません。
 
-## 自動公開の条件
-
-次をすべて満たす提案は自動で承認され、監査記録が残ります。
-
-- 全体の信頼度が 0.85 以上
-- 妥当性のエラーがない
-- 評価セットがある場合、精度の低下が 5 ポイント以内
-
-削除の提案は必ず人がレビューします。
-
 ## 関連
 
 - 公式ドキュメント（2026-11-13 確認）: [エンリッチメントタスクについて](https://docs.cloud.google.com/knowledge-catalog/docs/about-enrichment-tasks)、[エンリッチメントの実行管理](https://docs.cloud.google.com/knowledge-catalog/docs/manage-enrichment-runs)

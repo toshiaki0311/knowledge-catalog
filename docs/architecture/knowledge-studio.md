@@ -21,11 +21,6 @@ Preview の機能です。
 - Cloud Logging などのクエリ履歴
 - Gemini Enterprise のチャットログ、BigQuery の agent analytics
 
-## Preview の制約
-
-- 操作は Google Cloud コンソールが中心で、エンリッチメントタスクの管理に REST API と gcloud は使えない
-- VPC Service Controls と CMEK に対応していない
-
 ## 関連
 
 - 公式ドキュメント（2026-11-13 確認）: [Knowledge Studio](https://docs.cloud.google.com/knowledge-catalog/docs/knowledge-studio)

@@ -47,16 +47,6 @@ Aspect は Entry、Entry の列、Entry Link の 3 か所に付きます。\
 | Aspect Type | `Schema`、`Overview`、`Contacts`、`DataQuality`、`Lineage` など | PII 分類や SLA の階層など |
 | Aspect | ソースシステム、クエリログ、自動スキャンから作られる | 利用者、パイプライン、エージェントが付ける |
 
-## ロケーションとプロジェクトの制約
-
-| 関係 | 制約 |
-|---|---|
-| Entry と Entry Type | ロケーションが一致するか、Entry Type が `global`。Entry Type は `global` か同じプロジェクトのもの |
-| Aspect と Aspect Type | Aspect Type が Entry と同じロケーションか `global`。`global` か同じプロジェクトのもの |
-| Entry Link と Entry Link Type | ロケーションが一致するか、Entry Link Type が `global` |
-| Entry Link と Entry | 同じ組織内なら、別プロジェクトの Entry どうしを結べる |
-| Entry Type と Aspect Type | 同じロケーションか `global` の Aspect Type で構成する。カスタムの Aspect Type は同じプロジェクトとロケーションのもの |
-
 ## 関連
 
 - 公式ドキュメント（2026-11-13 確認）: [メタデータモデル](https://docs.cloud.google.com/knowledge-catalog/docs/metadata-overview)

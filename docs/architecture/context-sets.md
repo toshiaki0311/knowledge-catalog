@@ -33,11 +33,6 @@ Context Set は `type="context-set"` の特殊な [Entry Group](metadata-model.m
 | データへのアクセス権 | Context Set は付与しない |
 | データプロダクト | データプロダクトはデータそのものを共有・統治し、Context Set は会話用の意味をまとめる。データプロダクトから参照できる |
 
-## Preview の制約
-
-- 1 つの Context Set に設定できるエンリッチメントタスクは 1 つ
-- Context Set をまたいで Entry の一部だけを参照することはできない
-
 ## 関連
 
 - 公式ドキュメント（2026-11-13 確認）: [Context sets](https://docs.cloud.google.com/knowledge-catalog/docs/context-sets)
